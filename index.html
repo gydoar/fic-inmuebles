@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Alquiler oficinas Bogotá</title>
+  <meta name="description" content="Áreas en planta para alquiler desde 510 m2 hasta 2528 m2. Ubicado en la torre 2 centro empresarial Colpatria, Bogotá Colombia.">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container fondo">
+    <header class="eleven columns offset-by-one">
+      <div class="three columns">
+         <h1>TORRE 2</h1>
+        <p>Áreas en plata desde 510<br>hasta 2528* m2 en renta</p>
+      </div>
+
+      <div class="six columns">
+        <iframe class="twelve columns"src="banner.html" width="390" height="122" frameborder="0"></iframe>
+      </div>
+     
+      <div class="three columns logo">
+        <img class="twelve columns" src="images/logo_fondo_colombia.png" alt="">
+      </div>
+
+    </header>
+
+    <br>
+    <!-- Contenido -->
+    <div class="eleven columns offset-by-one acordion">
+      <dl>
+        <dt>LEED GOLD</dt>
+        <dd>
+          
+          <!-- Place somewhere in the <body> of your page -->
+          <div class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="images/leed_golden/leed_gold_1.jpg"/>
+              </li>
+               <li>
+                <img src="images/leed_golden/leed_gold_2.jpg"/>
+              </li>
+            </ul>
+          </div>
+
+        </dd>
+
+        <dt>PROYECTO</dt>
+        <dd>
+           <!-- Place somewhere in the <body> of your page -->
+          <div class="flexslider">
+            <ul class="slides">
+              <li>
+                <img src="images/proyecto/proyecto1.jpg"/>
+              </li>
+              <li>
+                <img src="images/proyecto/proyecto2.jpg"/>
+              </li>
+               <li>
+                <img src="images/proyecto/proyecto3.jpg"/>
+              </li>
+               <li>
+                <img src="images/proyecto/proyecto4.jpg"/>
+              </li>
+               <li>
+                <img src="images/proyecto/proyecto5.jpg"/>
+              </li>
+            </ul>
+          </div>
+        </dd>
+
+        <dt>UBICACIÓN Y MOVILIDAD</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio voluptatum expedita sunt voluptatibus ratione assumenda quo animi numquam blanditiis asperiores illo laudantium et quae itaque reiciendis nam ducimus officiis officia?</dd>
+
+        <dt>SERVICIOS</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto obcaecati numquam nemo quasi omnis accusamus illo distinctio doloribus architecto culpa maiores blanditiis laborum accusantium assumenda vero necessitatibus optio? Ipsa perferendis.</dd>
+
+        <dt>TECNOLOGÍA DE VANGIARDIA EN SEGURIDAD</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto obcaecati numquam nemo quasi omnis accusamus illo distinctio doloribus architecto culpa maiores blanditiis laborum accusantium assumenda vero necessitatibus optio? Ipsa perferendis.</dd>
+
+        <dt>CONTACTENOS</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto obcaecati numquam nemo quasi omnis accusamus illo distinctio doloribus architecto culpa maiores blanditiis laborum accusantium assumenda vero necessitatibus optio? Ipsa perferendis.</dd>
+      </dl> 
+    </div>
+  </div>
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <script>
+           /* Flexslider */
+       // Can also be used with $(document).ready()
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false
+          });
+        });
+  </script>
+  <script type="text/javascript">
+     $('dl dd').hide();
+       $('dl dt').click(function(){
+          if ($(this).hasClass('activo')) {
+               $(this).removeClass('activo');
+               $(this).next().slideUp();
+          } else {
+               $('dl dt').removeClass('activo');
+               $(this).addClass('activo');
+               $('dl dd').slideUp();
+               $(this).next().slideDown();
+          }
+       });
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body{
+	background-color: #999999;
+}
+.fondo{
+	background: url(../images/fondo.jpg);
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 1000px;
+	width: 100%;
+	background-size: 100%;
+		-webkit-background-size: 100%;
+			-moz-background-size: 100%;
+				-o-background-size: 100%;
+	background-size: cover;
+
+}
+header{
+	text-align: center;
+	color: #ffffff;
+	z-index: 100;
+}
+header h1{
+	font-weight: bold;
+	font-size: 50px;
+	margin-bottom: 0px;
+}
+header p{
+	font-family: 'GeosansLight', sans-serif;
+	font-size: 16px;
+	letter-spacing: 1px;
+	line-height: 20px;
+
+}
+
+.acordion{
+    position: absolute;
+    margin-top: 150px;
+}
+dl{max-width: 100%;margin: 0px; }
+        
+        dt{ background: #333333; color: white; border-bottom: 1px solid #141414; border-top: 1px solid #4E4E4E; cursor: pointer; }
+        dd{ background: #F5F5F5; display: none; line-height: 1.6em; margin-left: 0px;}
+        dt.activo, dt:hover{ background: #424242; }
+
+        dt:before{ content: "▸"; margin-right: 10px; }
+        dt.activo:before{ content: "▾"; }
