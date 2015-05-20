@@ -35,6 +35,14 @@ header p{
 .acordion{
     position: absolute;
     margin-top: 150px;
+    width: 100%;
+    background-attachment: relative;
+    background-size: 100%;
+}
+
+.formulario{
+    background: url(../images/fondo_formulario.jpg);
+    min-height: 583px;
 }
 dl{max-width: 100%;margin: 0px; }
         
