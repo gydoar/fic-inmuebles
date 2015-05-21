@@ -442,4 +442,7 @@ there.
     .logo{
       display: none;
     }
-  }
+    footer{
+      margin-top: 1000px;
+    }
+  } 

@@ -12,12 +12,11 @@ body{
 			-moz-background-size: 100%;
 				-o-background-size: 100%;
 	background-size: cover;
-
+    z-index: 0;
 }
 header{
 	text-align: center;
 	color: #ffffff;
-	z-index: 100;
 }
 header h1{
 	font-weight: bold;
@@ -33,18 +32,28 @@ header p{
 }
 
 .acordion{
-    position: absolute;
-    margin-top: 150px;
+
     width: 100%;
-    background-attachment: relative;
     background-size: 100%;
 }
-
+    .acordion p{
+        margin-top: 10px;
+        margin-left: 10px;
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: normal;
+    }
 .formulario{
     background: url(../images/fondo_formulario.jpg);
+    background-repeat: no-repeat;
     min-height: 583px;
 }
-dl{max-width: 100%;margin: 0px; }
+    .formulario form{
+        float: left;
+        clear: left;
+        overflow: hidden;
+    }
+dl{max-width: 100%;margin: 0px;}
         
         dt{ background: #333333; color: white; border-bottom: 1px solid #141414; border-top: 1px solid #4E4E4E; cursor: pointer; }
         dd{ background: #F5F5F5; display: none; line-height: 1.6em; margin-left: 0px;}
@@ -52,3 +61,13 @@ dl{max-width: 100%;margin: 0px; }
 
         dt:before{ content: "▸"; margin-right: 10px; }
         dt.activo:before{ content: "▾"; }
+
+footer{
+    background: url(../images/footer.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80px;
+    margin-top: 900px;
+    background-position: absolute;
+    color: #ffffff;
+}
