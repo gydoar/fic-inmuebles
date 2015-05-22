@@ -1,6 +1,9 @@
 body{
 	background-color: #999999;
 }
+ul li{
+    list-style: none;
+}
 .fondo{
 	background: url(../images/fondo.jpg);
 	background-attachment: relative;
@@ -63,6 +66,7 @@ dl{max-width: 100%;margin: 0px;}
         dt.activo:before{ content: "▾"; }
 
 footer{
+
     background: url(../images/footer.png);
     background-repeat: no-repeat;
     width: 100%;
@@ -70,4 +74,36 @@ footer{
     margin-top: 900px;
     background-position: absolute;
     color: #ffffff;
+    text-align: right;
 }
+    footer h4{
+        
+        font-size: 24px;
+        margin-bottom: 0px;
+    }  
+    footer h5{
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+        footer h5 a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+            footer h5 a:hover{
+                color: rgba(255,255,255,0.9);
+            }
+    footer ul{
+        padding-top: 10px;
+        margin-bottom: 0px;
+    }
+    footer ul li{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    footer ul li img{
+        margin-left: 30px;
+    }
+
+    footer ul li img, footer ul li{
+        vertical-align: middle;
+    }

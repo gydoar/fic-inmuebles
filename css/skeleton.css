@@ -435,6 +435,12 @@ there.
      .logo{
       display: none;
     }
+    footer ul li img{
+      display: none;
+     }
+       footer h5{
+      font-size: 14px;
+     }
   }
 
   /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
@@ -445,4 +451,13 @@ there.
     footer{
       margin-top: 1000px;
     }
+    footer h4{
+      display: none;
+    }
+     footer ul li img{
+      display: none;
+     }
+     footer h5{
+      font-size: 14px;
+     }
   } 
