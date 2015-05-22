@@ -112,11 +112,24 @@
         </dd>
 
         <dt>CONTACTENOS</dt>
-        <dd class="formulario">
-          <h3>Deseo que me contacten</h3>
-          <form action="" class="">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore facilis consequatur tempora harum quis, delectus placeat cum perspiciatis itaque suscipit voluptates, alias hic maxime a et incidunt porro nemo dicta.
-          </form>
+        <dd class="formulario" method="post">
+          <div>
+            <form action="send.php">
+              <label for="">Nombre
+                <input type="text" name="nombre" id="nombre" value="" required>
+              </label>
+
+               <label for="">Email
+                <input type="email" name="email" id="email" value="" required>
+              </label>
+
+               <label for="">Teléfono
+                <input type="text" name="telefono" id="telefono" value="" required>
+              </label>
+
+              <input type="submit" value="Enviar">
+            </form>
+          </div>
         </dd>
       </dl> 
       <p>Fiduciaria Bancolombia S.A. es la Sociedad Administradora del Fondo de Capital Fondo Inmobiliario Colombia</p>
@@ -163,6 +176,16 @@
                $(this).next().slideDown();
           }
        });
+  </script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-62093469-1', 'auto');
+    ga('send', 'pageview');
+
   </script>
 </body>
 </html>
