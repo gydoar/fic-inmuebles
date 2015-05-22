@@ -185,11 +185,12 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+  float: left;
+  text-align: left;
   display: inline-block;
   height: 38px;
   padding: 0 30px;
   color: #555;
-  text-align: center;
   font-size: 11px;
   font-weight: 600;
   line-height: 38px;
@@ -221,8 +222,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  background-color: rgb(5, 62, 133);
+  border-color: rgb(5, 62, 133); }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -234,8 +235,8 @@ input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
   color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  background-color: rgb(5, 62, 133);
+  border-color: rgb(5, 62, 133); }
 
 
 /* Forms
@@ -249,7 +250,7 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  height: 38px;
+  height: 22px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
   border: 1px solid #D1D1D1;
@@ -407,57 +408,3 @@ hr {
   clear: both; }
 
 
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
-
-/*------------------------------------*\
-    $MEDIA-QUERIES
-\*------------------------------------*/
-
-  /* Smaller than standard 960 (devices and browsers) */
-  @media only screen and (max-width: 959px) {}
-
-  /* Tablet Portrait size to standard 960 (devices and browsers) */
-  @media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-  /* All Mobile Sizes (devices and browser) */
-  @media only screen and (max-width: 767px) {}
-
-  /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-  @media only screen and (min-width: 480px) and (max-width: 767px) {
-     .logo{
-      display: none;
-    }
-    footer ul li img{
-      display: none;
-     }
-       footer h5{
-      font-size: 14px;
-     }
-  }
-
-  /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-  @media only screen and (max-width: 479px) {
-    .logo{
-      display: none;
-    }
-    footer{
-      margin-top: 1000px;
-    }
-    footer h4{
-      display: none;
-    }
-     footer ul li img{
-      display: none;
-     }
-     footer h5{
-      font-size: 14px;
-     }
-  } 

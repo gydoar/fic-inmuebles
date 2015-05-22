@@ -1,8 +1,7 @@
-<?php
-
+  <?php
 $nombre = $_POST['nombre'];
 $telefono = $_POST['telefono'];
-$mail = $_POST['email'];
+$mail = $_POST['mail'];
 
 
 $header = 'From: ' . $mail . " \r\n";
@@ -22,4 +21,5 @@ mail($para, $asunto, utf8_decode($mensaje), $header);
 
 echo '';
 
+header ("Location: http://www.fic-inmuebles.com/new/index.html");
 ?>

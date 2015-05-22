@@ -50,12 +50,20 @@ header p{
     background: url(../images/fondo_formulario.jpg);
     background-repeat: no-repeat;
     min-height: 583px;
+    background-size: 100%;
 }
     .formulario form{
-        float: left;
-        clear: left;
-        overflow: hidden;
+        padding-top: 450px;
+        z-index: 100;
     }
+    .formulario form label{
+        color: #C0C0C0;
+    }
+        .formulario form input{
+            margin-bottom: 0px;
+            float: right;
+        }
+
 dl{max-width: 100%;margin: 0px;}
         
         dt{ background: #333333; color: white; border-bottom: 1px solid #141414; border-top: 1px solid #4E4E4E; cursor: pointer; }
@@ -107,3 +115,65 @@ footer{
     footer ul li img, footer ul li{
         vertical-align: middle;
     }
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+
+/*------------------------------------*\
+    $MEDIA-QUERIES
+\*------------------------------------*/
+
+  /* Smaller than standard 960 (devices and browsers) */
+  @media only screen and (max-width: 959px) {}
+
+  /* Tablet Portrait size to standard 960 (devices and browsers) */
+  @media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {}
+
+  /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+     .logo{
+      display: none;
+    }
+    footer ul li img{
+      display: none;
+     }
+       footer h5{
+      font-size: 14px;
+     }
+      .formulario form{
+        padding-top: 350px;
+     }
+
+  }
+
+  /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+  @media only screen and (max-width: 479px) {
+    .logo{
+      display: none;
+    }
+    footer{
+      margin-top: 1000px;
+    }
+    footer h4{
+      display: none;
+    }
+     footer ul li img{
+      display: none;
+     }
+     footer h5{
+      font-size: 14px;
+     }
+     .formulario form{
+        padding-top: 300px;
+     }
+  } 

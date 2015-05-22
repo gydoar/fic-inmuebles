@@ -112,22 +112,28 @@
         </dd>
 
         <dt>CONTACTENOS</dt>
-        <dd class="formulario" method="post">
-          <div>
-            <form action="send.php">
-              <label for="">Nombre
-                <input type="text" name="nombre" id="nombre" value="" required>
-              </label>
+        <dd class="formulario">
+          <div class="container">
+            <form action="send.php" method="post">
+              <div class="row">
+                  <div class="five columns">
+                    <label for="">Nombre
+                      <input type="text" name="nombre" id="nombre" value="" required>
+                    </label>
 
-               <label for="">Email
-                <input type="email" name="email" id="email" value="" required>
-              </label>
+                     <label for="">Email
+                      <input type="email" name="mail" id="mail" value="" required>
+                    </label>
 
-               <label for="">Teléfono
-                <input type="text" name="telefono" id="telefono" value="" required>
-              </label>
-
-              <input type="submit" value="Enviar">
+                     <label for="">Teléfono
+                      <input type="text" name="telefono" id="telefono" value="" required>
+                    </label>
+                  </div>
+                  <div class="seven columns">
+                    <input style="float:left;"class="button-primary button btn-enviar "type="submit" value="Enviar">
+                  </div>
+              </div>
+              
             </form>
           </div>
         </dd>
