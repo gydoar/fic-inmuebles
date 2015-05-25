@@ -26,7 +26,8 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="favicon.ico">
+
 
 </head>
 <body>
@@ -159,39 +160,37 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="js/jquery.flexslider.js"></script>
+  
   <script>
-           /* Flexslider */
+
+         $('dl dd').hide();
+           $('dl dt').click(function(){
+              if ($(this).hasClass('activo')) {
+                   $(this).removeClass('activo');
+                   $(this).next().slideUp();
+              } else {
+                   $('dl dt').removeClass('activo');
+                   $(this).addClass('activo');
+                   $('dl dd').slideUp();
+                   $(this).next().slideDown();
+              }
+           });
+
+        /* Flexslider */
        // Can also be used with $(document).ready()
-        $(window).load(function() {
-          $('.flexslider').flexslider({
-            animation: "slide",
-            controlNav: false
-          });
-        });
-  </script>
-  <script type="text/javascript">
-     $('dl dd').hide();
-       $('dl dt').click(function(){
-          if ($(this).hasClass('activo')) {
-               $(this).removeClass('activo');
-               $(this).next().slideUp();
-          } else {
-               $('dl dt').removeClass('activo');
-               $(this).addClass('activo');
-               $('dl dd').slideUp();
-               $(this).next().slideDown();
-          }
-       });
-  </script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+         $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
 
-    ga('create', 'UA-62093469-1', 'auto');
-    ga('send', 'pageview');
 
-  </script>
+        // Google Analytics
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-62093469-1', 'auto');
+        ga('send', 'pageview');
+  </script>  
 </body>
 </html>
