@@ -56,7 +56,7 @@
     <div class="eleven columns offset-by-one acordion">
       <dl>
         <dt class="activo">LEED GOLD</dt>
-        <dd>
+        <dd style="display:block;overlow:hidden;">
           
           <!-- Place somewhere in the <body> of your page -->
           <div class="flexslider">
@@ -179,8 +179,13 @@
         /* Flexslider */
        // Can also be used with $(document).ready()
          $(window).load(function() {
-    $('.flexslider').flexslider();
-  });
+            $('.flexslider').flexslider({
+              directionNav: false,
+              controlNav: false
+
+            });
+
+          });
 
 
         // Google Analytics
