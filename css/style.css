@@ -72,7 +72,13 @@ dl{max-width: 100%;margin: 0px;}
 
         dt:before{ content: "▸"; margin-right: 10px; }
         dt.activo:before{ content: "▾"; }
-
+        dt a{
+          text-decoration: none;
+          color: #ffffff;
+        }
+        dt a:hover{
+          color: #ffffff;
+        }
 footer{
 
     background: url(../images/footer.png);

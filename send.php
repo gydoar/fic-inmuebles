@@ -19,7 +19,6 @@ $asunto = 'Formulario Fondo Inmobiliario Colombia';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-echo '';
+echo 'Hemos recibido tu mensaje, pronto te contactaremos.';
 
-header ("Location: http://www.fic-inmuebles.com/new/index.html");
 ?>
