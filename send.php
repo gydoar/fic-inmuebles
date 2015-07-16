@@ -14,11 +14,12 @@ $mensaje .= "Su e-mail es: " . $mail . " \r\n";
 $mensaje .= "Su telefono: " . $telefono . " \r\n";
 $mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'arriendos@fic-inmuebles.com';
+$para = 'arriendos@fic-inmuebles.com,handres@degrisdigital.com';
 $asunto = 'Formulario Fondo Inmobiliario Colombia';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
 echo 'Hemos recibido tu mensaje, pronto te contactaremos.';
+
 
 ?>
